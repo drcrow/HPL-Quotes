@@ -242,7 +242,7 @@ var authors = [
         $quote.css('opacity','0');
         Wikiquote.getRandomQuote("H. P. Lovecraft",
             function (quote) {
-                console.log(quote.quote);
+                //console.log(quote.quote);
                 if (quote.quote && quote.quote.length <= 180) {
                     setHtml(quote);
                     $quote.css('opacity','1');
