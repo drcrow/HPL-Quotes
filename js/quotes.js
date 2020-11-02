@@ -231,13 +231,7 @@ var authors = [
         "Steve Jobs"
     ],
     $quote = $('#quote'),
-    $btns = $('.btn'),
-    randInt = function(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    },
-    randColor = function() {
-        return 'rgb(' + randInt(0,128) + ',' + randInt(0,128) + ',' + randInt(0,128) + ')';
-    },
+    $btns = $('.btn')
     setHtml = function(q) {
        $('#quote').html(
            '<p class="mb-0">'+ q.quote +'</p>' +
