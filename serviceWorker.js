@@ -3,11 +3,13 @@ self.addEventListener("install", e => {
         caches.open("static").then(cache => {
             return cache.addAll([
                 "./",
-                "./style.css",
+                "./css/style.css",
+                "./css/bootstrap.min.css",
                 "./img/hpl.png",
                 "./img/logo192.png",
                 "./img/logo512.png",
-                "https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+                "./js/jquery.min.js",
+                "./js/bootstrap.bundle.min.js"
             ]);
         })
     );
